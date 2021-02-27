@@ -3,7 +3,7 @@ entries:
   prometheus-instance:
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2021-02-26T21:29:33.978857501+05:30"
+    created: "2021-02-27T19:25:04.560503758+05:30"
     dependencies:
     - name: alertmanager
       repository: file://./charts/alertmanager
@@ -17,11 +17,14 @@ entries:
     - name: prometheus-instance
       repository: file://./charts/prometheus-instance
       version: 0.1.0
+    - name: grafana
+      repository: file://./charts/grafana
+      version: 0.1.0
     description: A Helm chart forinstalling prometheus-instance on Kubernetes
-    digest: bdfd0899aa1436b0e373b6262d6e1149204baee37e0b5c255fc50192a2a57e41
+    digest: 926b6edfbeacbff0c55c46d249ec76835e670ce280053f83f9102209a0c1521b
     name: prometheus-instance
     type: application
     urls:
     - https://sajidqureshi19.github.io/prometheus-helm-charts/prometheus-instance-0.2.0.tgz
     version: 0.2.0
-generated: "2021-02-26T21:29:33.977129144+05:30"
+generated: "2021-02-27T19:25:04.554473965+05:30"
