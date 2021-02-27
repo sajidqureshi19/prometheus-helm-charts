@@ -1,0 +1,15 @@
+# Default values for kube-state-metrics.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+ServiceAccountName: kube-state-metrics
+ClusterRoleName: kube-state-metrics
+
+
+deployment:
+   replicas: 1
+   image: quay.io/coreos/kube-state-metrics:v1.9.5
+
+
+service:
+   port: 8443

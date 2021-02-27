@@ -1,0 +1,19 @@
+# Default values for prometheus-instance.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+prometheus:
+   namespace: default
+   image: quay.io/prometheus/prometheus:v2.19.2
+   replicas: 1
+   serviceAccountName: prometheus-default
+
+ServiceAccountName: prometheus-default   
+
+service:
+   name: prometheus-k8s
+   port: 9090
+
+ClusterRoleName: prometheus-k8s
+
+

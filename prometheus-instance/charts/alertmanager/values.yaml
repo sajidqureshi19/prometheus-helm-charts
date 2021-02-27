@@ -1,0 +1,16 @@
+# Default values for alertmanager.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+alertmanager:
+   namespace: default
+   image: quay.io/prometheus/alertmanager:v0.21.0
+   replicas: 1
+   serviceAccountName: alertmanager-main
+
+service:
+   name: alertmanager-main
+   port: 9093
+
+ServiceAccountName: alertmanager-main
+
